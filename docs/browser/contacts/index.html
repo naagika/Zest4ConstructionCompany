@@ -1,0 +1,567 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Zest 4 Construction Company</title>
+  <base href="/Zest4ConstructionCompany/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css" id="fa-auto-css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Pro";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Pro";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-duotone-solid: normal 900 1em/1 "Font Awesome 6 Sharp Duotone";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-counter-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(-1 * var(--fa-li-width, 2em));
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  animation-name: fa-beat;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  animation-name: fa-bounce;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  animation-name: fa-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  animation-name: fa-beat-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  animation-name: fa-flip;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  animation-name: fa-shake;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  animation-name: fa-spin;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 2s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  animation-name: fa-spin;
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    animation-delay: -1ms;
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-shake {
+  0% {
+    transform: rotate(-15deg);
+  }
+  4% {
+    transform: rotate(15deg);
+  }
+  8%, 24% {
+    transform: rotate(-18deg);
+  }
+  12%, 28% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-22deg);
+  }
+  20% {
+    transform: rotate(22deg);
+  }
+  32% {
+    transform: rotate(-12deg);
+  }
+  36% {
+    transform: rotate(12deg);
+  }
+  40%, 100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  transform: rotate(var(--fa-rotate-angle, 0));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>html{scroll-behavior:smooth}body{font-family:Montserrat;line-height:1.4;margin:0;padding:0;box-sizing:border-box;background-color:#f0f0f0}.home{position:relative;background-image:url("./media/background-C3P7WONK.jpg");background-size:cover;background-position:center;padding:150px 20px;text-align:center;color:#fff;height:40vh;display:flex;flex-direction:column;justify-content:center;margin-top:70px}.home:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-color:#0009;z-index:1}.home h1,.cta-button{position:relative;font-size:20px;z-index:2}.home h1{font-size:48px;color:#fff;margin-bottom:20px}.cta-button{padding:20px 30px;background-color:#f60;color:#fff;width:auto;border:none;border-radius:10px;display:inline-block;max-width:300px;margin:0 auto;cursor:pointer;text-transform:uppercase;transition:background-color .3s,transform .2s;text-align:center}.cta-button:hover{background-color:#e65c00;transform:scale(1.05)}.services{text-align:center;padding:50px 20px;background-color:#fff;margin:20px 0;scroll-margin-top:70px}.service-list{flex-wrap:nowrap;display:flex;flex-wrap:wrap;justify-content:space-around;gap:20px;margin-top:30px}.service-item{flex:1 1 calc(20% - 40px);background-color:#fff;padding:20px;border-radius:8px;box-shadow:0 4px 8px #0000001a;transition:transform .3s}.service-item:hover{transform:translateY(-10px)}.service-item h3{margin-top:15px;font-size:1.25em;color:#333}.service-item ul{list-style-type:none;padding:0;margin-top:10px;font-size:.95em;color:#555}.service-item ul li{margin-bottom:8px}.icon{font-size:3em;color:#f60}.testimonials{text-align:center;padding:60px 20px;background-color:#fff;margin-top:20px;border-radius:8px}@media (max-width: 768px){.navbar{flex-direction:column;align-items:flex-start}.nav{flex-direction:column;width:100%;padding:10px 0}.nav a{padding:10px 0}.cta-button{margin:0 auto}.service-item{flex:1 1 calc(100% - 40px)}.service-list{flex-direction:column;gap:15px}}@media (max-width: 480px){.home h1{font-size:32px}.cta-button{padding:15px 20px}}.show-more-button{padding:20px 30px;background-color:#f60;color:#fff;width:auto;border:none;border-radius:10px;display:inline-block;cursor:pointer;text-transform:uppercase;transition:background-color .3s,transform .2s;text-align:center}.show-more-button:hover{background-color:#e65c00;transform:scale(1.05)}.gallery-images{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.gallery-item img{width:200px;height:150px;object-fit:cover}.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto}.fas{font-family:"Font Awesome 6 Free"}.fa-comments:before{content:"\f086"}.fa-globe:before{content:"\f0ac"}.fa-hard-hat:before{content:"\f807"}.fa-arrow-right:before{content:"\f061"}.fa-tools:before{content:"\f7d9"}.fa-cube:before{content:"\f1b2"}.fa-phone-alt:before{content:"\f879"}.fa-phone:before{content:"\f095"}.fa-arrow-left:before{content:"\f060"}.fa-envelope:before{content:"\f0e0"}.fa-water:before{content:"\f773"}.fa-home:before{content:"\f015"}.fa-fan:before{content:"\f863"}:root{--fa-style-family-brands:"Font Awesome 6 Brands";--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands"}@font-face{font-family:"Font Awesome 6 Brands";font-style:normal;font-weight:400;font-display:block;src:url("./media/fa-brands-400-MDS4TU4L.woff2") format("woff2"),url("./media/fa-brands-400-CNBICIQT.ttf") format("truetype")}:root{--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:400;font-display:block;src:url("./media/fa-regular-400-N56QV3DR.woff2") format("woff2"),url("./media/fa-regular-400-2FI4ICQD.ttf") format("truetype")}:root{--fa-style-family-classic:"Font Awesome 6 Free";--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:block;src:url("./media/fa-solid-900-Z3HFQTXF.woff2") format("woff2"),url("./media/fa-solid-900-XVWCCN5V.ttf") format("truetype")}.fas{font-weight:900}
+</style><link rel="stylesheet" href="styles-DJI4GYME.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-DJI4GYME.css"></noscript><style ng-app-id="ng">.yelp-reviews[_ngcontent-ng-c3214059917]   img[_ngcontent-ng-c3214059917]{height:10px;margin-right:5px}@media (max-width: 768px){.slideshow-container[_ngcontent-ng-c3214059917]{max-width:90%;height:auto;margin:0 auto}.mySlides[_ngcontent-ng-c3214059917]   img[_ngcontent-ng-c3214059917]{width:100%;height:auto}}@media (max-width: 480px),(max-width: 390px){.about-projects-container[_ngcontent-ng-c3214059917]{padding:10px;box-shadow:none}.about-content[_ngcontent-ng-c3214059917]   h2[_ngcontent-ng-c3214059917], .projects-slider[_ngcontent-ng-c3214059917]   h2[_ngcontent-ng-c3214059917]{font-size:18px}.about-content[_ngcontent-ng-c3214059917]   p[_ngcontent-ng-c3214059917], .projects-slider[_ngcontent-ng-c3214059917]   p[_ngcontent-ng-c3214059917], .about-description[_ngcontent-ng-c3214059917]   p[_ngcontent-ng-c3214059917]{font-size:14px}.show-more-button[_ngcontent-ng-c3214059917]{width:70%;padding:10px}.gallery-images[_ngcontent-ng-c3214059917]{grid-template-columns:repeat(2,1fr)}}@media (min-height: 1080px){.about-projects-container[_ngcontent-ng-c3214059917]{height:auto;max-height:90vh;overflow-y:auto}}</style><style ng-app-id="ng">.logo[_ngcontent-ng-c1359355375]{width:120px;height:auto;display:block;margin-left:30px}.navbar[_ngcontent-ng-c1359355375]{position:fixed;top:0;width:100%;max-width:1920px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:20px 30px;background-color:#fff;box-shadow:0 4px 6px #0000001a;z-index:1000}.navbar-brand[_ngcontent-ng-c1359355375]{font-size:24px;font-weight:700;color:#f60;text-decoration:none;margin-right:35px}.nav[_ngcontent-ng-c1359355375]{list-style:none;display:flex;gap:50px;margin:0 400px 0 0;padding:0}.nav[_ngcontent-ng-c1359355375]   a[_ngcontent-ng-c1359355375]{text-decoration:none;color:#1a1919;font-weight:500;transition:color .3s;font-size:18px}.nav[_ngcontent-ng-c1359355375]   a[_ngcontent-ng-c1359355375]:hover{color:#f60}.nav[_ngcontent-ng-c1359355375]   a.active[_ngcontent-ng-c1359355375]{color:#f60;font-weight:700}.burger-menu[_ngcontent-ng-c1359355375]{display:none;font-size:24px;cursor:pointer;align-self:center;position:absolute;right:30px}@media (max-width: 768px){.nav[_ngcontent-ng-c1359355375]{display:none;flex-direction:column;background-color:#fff;position:absolute;top:60px;margin-right:20px;right:0;width:200px;box-shadow:0 4px 6px #0000001a;padding:20px;z-index:px}.nav.open[_ngcontent-ng-c1359355375]{display:flex}.burger-menu[_ngcontent-ng-c1359355375]{display:block;position:absolute;right:90px}.nav-item[_ngcontent-ng-c1359355375]{padding:10px 0}.nav[_ngcontent-ng-c1359355375]   a[_ngcontent-ng-c1359355375]{font-size:20px;font-weight:700}}</style><style ng-app-id="ng">.image-modal[_ngcontent-ng-c1844967749]{position:fixed;top:0;left:0;width:100%;height:100%;background:#000c;display:flex;align-items:center;justify-content:center;visibility:hidden;opacity:0;transition:opacity .3s,visibility .3s;z-index:1001}.image-modal.show[_ngcontent-ng-c1844967749]{visibility:visible;opacity:1}.image-modal-content[_ngcontent-ng-c1844967749]{position:relative;max-width:80%;max-height:80%}.modal-image[_ngcontent-ng-c1844967749]{width:100%;height:auto;border-radius:8px}.prev[_ngcontent-ng-c1844967749], .next[_ngcontent-ng-c1844967749]{position:absolute;top:50%;transform:translateY(-50%);background-color:#00000080;color:#fff;border:none;font-size:24px;padding:10px;cursor:pointer}.prev[_ngcontent-ng-c1844967749]{left:10px}.next[_ngcontent-ng-c1844967749]{right:10px}.prev[_ngcontent-ng-c1844967749]:hover, .next[_ngcontent-ng-c1844967749]:hover{background-color:#000c}.image-modal[_ngcontent-ng-c1844967749]   .close[_ngcontent-ng-c1844967749]{position:absolute;top:10px;right:20px;font-size:28px;color:#fff;cursor:pointer}.image-modal[_ngcontent-ng-c1844967749]   .close[_ngcontent-ng-c1844967749]:hover{color:#ccc}.modal[_ngcontent-ng-c1844967749]{display:none;position:fixed;z-index:1;left:0;top:0;margin-top:80px;width:100%;height:100%;overflow:auto;background-color:#000000b3}.modal.show[_ngcontent-ng-c1844967749]{display:block}.modal-content[_ngcontent-ng-c1844967749]{background-color:#fefefe;margin:10% auto;padding:20px;border:1px solid #888;width:80%;max-width:600px;border-radius:8px}.close[_ngcontent-ng-c1844967749]{color:#aaa;float:right;font-size:28px;font-weight:700;cursor:pointer}.close[_ngcontent-ng-c1844967749]:hover, .close[_ngcontent-ng-c1844967749]:focus{color:#000;text-decoration:none;cursor:pointer}.gallery-images[_ngcontent-ng-c1844967749]{display:flex;flex-wrap:wrap;gap:10px}.gallery-item[_ngcontent-ng-c1844967749]{flex:1 1 calc(33.333% - 10px);box-sizing:border-box}.gallery-item[_ngcontent-ng-c1844967749]   img[_ngcontent-ng-c1844967749]{width:100%;border-radius:4px;box-shadow:0 2px 5px #0000004d}.show-more-button[_ngcontent-ng-c1844967749]{background-color:ff6600}.about-projects[_ngcontent-ng-c1844967749]{display:flex;justify-content:space-between;align-items:center;gap:40px;max-width:1200px;margin:0 auto;padding:40px 20px;text-align:center}.about-content[_ngcontent-ng-c1844967749]{width:45%;padding:20px;box-shadow:0 4px 8px #0000001a;border-radius:10px;background:#fff;text-align:center}.about-content[_ngcontent-ng-c1844967749]   h2[_ngcontent-ng-c1844967749], .projects-slider[_ngcontent-ng-c1844967749]   h2[_ngcontent-ng-c1844967749]{color:#333;font-size:24px;margin-bottom:20px;text-align:center}.projects-slider[_ngcontent-ng-c1844967749]{width:50%;height:365px;padding:20px;box-shadow:0 4px 8px #0000001a;border-radius:10px;background:#fff}.show-more-button[_ngcontent-ng-c1844967749]{margin-top:55px;padding:15px 20px;background-color:#f60;color:#fff;border:none;border-radius:5px;cursor:pointer;align-items:center}.modal[_ngcontent-ng-c1844967749]{position:fixed;top:0;left:0;width:100%;height:100%;background:#000c;display:flex;align-items:center;justify-content:center;visibility:hidden;opacity:0;transition:opacity .3s,visibility .3s}.modal.show[_ngcontent-ng-c1844967749]{visibility:visible;opacity:1}.modal-content[_ngcontent-ng-c1844967749]{background:#fff;padding:20px;border-radius:10px;max-width:80%;text-align:center;position:relative}.close[_ngcontent-ng-c1844967749]{position:absolute;top:10px;right:10px;font-size:24px;cursor:pointer}.gallery-images[_ngcontent-ng-c1844967749]{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:15px;margin-top:20px}.gallery-item[_ngcontent-ng-c1844967749]   img[_ngcontent-ng-c1844967749]{width:100%;height:auto;border-radius:5px}.about-projects-container[_ngcontent-ng-c1844967749]{scroll-margin-top:70px;background:#fff;border-radius:0;box-shadow:0 4px 8px #0000001a;padding:40px;margin:20px auto;max-width:1900px;height:500px}.content-wrapper[_ngcontent-ng-c1844967749]{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}.about-content[_ngcontent-ng-c1844967749], .projects-slider[_ngcontent-ng-c1844967749]{width:45%}.about-content[_ngcontent-ng-c1844967749]   h2[_ngcontent-ng-c1844967749], .projects-slider[_ngcontent-ng-c1844967749]   h2[_ngcontent-ng-c1844967749]{text-align:center;font-size:24px;margin-bottom:15px;max-width:90%}.about-description[_ngcontent-ng-c1844967749]   p[_ngcontent-ng-c1844967749], .about-content[_ngcontent-ng-c1844967749]   p[_ngcontent-ng-c1844967749]{text-align:center;line-height:1.6;max-width:90%}.projects-slider[_ngcontent-ng-c1844967749]{text-align:center}@media (max-width: 1024px){.about-projects-container[_ngcontent-ng-c1844967749]{padding:30px;max-width:100%;margin:20px auto;height:auto}.content-wrapper[_ngcontent-ng-c1844967749]{flex-direction:column;align-items:center;gap:30px}.about-content[_ngcontent-ng-c1844967749], .projects-slider[_ngcontent-ng-c1844967749]{width:80%;margin-bottom:20px}.projects-slider[_ngcontent-ng-c1844967749]{height:auto}.show-more-button[_ngcontent-ng-c1844967749]{width:100%;margin-top:20px;padding:15px}}@media (max-width: 768px){.about-projects-container[_ngcontent-ng-c1844967749]{padding:20px}.content-wrapper[_ngcontent-ng-c1844967749]{gap:15px}.about-content[_ngcontent-ng-c1844967749], .projects-slider[_ngcontent-ng-c1844967749]{width:80%}.about-content[_ngcontent-ng-c1844967749]   h2[_ngcontent-ng-c1844967749], .projects-slider[_ngcontent-ng-c1844967749]   h2[_ngcontent-ng-c1844967749]{font-size:20px;margin-bottom:15px}.show-more-button[_ngcontent-ng-c1844967749]{padding:12px 15px;font-size:16px}.slideshow-container[_ngcontent-ng-c1844967749]{max-width:90%;height:auto;margin:0 auto}.mySlides[_ngcontent-ng-c1844967749]   img[_ngcontent-ng-c1844967749]{width:100%;height:auto}}@media (max-width: 480px),(max-width: 390px){.gallery-images[_ngcontent-ng-c1844967749]{grid-template-columns:repeat(3,1fr);gap:10px}.about-projects-container[_ngcontent-ng-c1844967749]{padding:10px;box-shadow:none}.about-content[_ngcontent-ng-c1844967749]   h2[_ngcontent-ng-c1844967749], .projects-slider[_ngcontent-ng-c1844967749]   h2[_ngcontent-ng-c1844967749]{font-size:18px}.about-content[_ngcontent-ng-c1844967749]   p[_ngcontent-ng-c1844967749], .projects-slider[_ngcontent-ng-c1844967749]   p[_ngcontent-ng-c1844967749], .about-description[_ngcontent-ng-c1844967749]   p[_ngcontent-ng-c1844967749]{font-size:14px}.show-more-button[_ngcontent-ng-c1844967749]{width:70%;padding:10px}}@media (min-height: 1080px){.about-projects-container[_ngcontent-ng-c1844967749]{height:auto;max-height:90vh;overflow-y:auto}}</style><style ng-app-id="ng">.testimonials[_ngcontent-ng-c3122394685]{text-align:center;padding:20px;scroll-margin-top:70px}.testimonial-container[_ngcontent-ng-c3122394685]{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:1200px;margin:0 auto}.testimonial-column[_ngcontent-ng-c3122394685]{width:100%;border-radius:10px;box-shadow:0 4px 8px #0000001a;padding:10px 10px 3px 5px;background:#fff;box-sizing:border-box;height:auto}.testimonial-column[_ngcontent-ng-c3122394685]   img[_ngcontent-ng-c3122394685]{max-width:60%;border-radius:0%;margin-bottom:3px}.yelp-button[_ngcontent-ng-c3122394685]{margin-top:40px;padding:15px 20px;background-color:#f60;color:#fff;border:none;border-radius:5px;cursor:pointer;align-items:center}.hidden-on-mobile[_ngcontent-ng-c3122394685]{display:block}@media (max-width: 768px){.testimonial-container[_ngcontent-ng-c3122394685]{grid-template-columns:repeat(2,1fr)}.testimonial-column[_ngcontent-ng-c3122394685]{width:100%;padding:15px}.hidden-on-mobile[_ngcontent-ng-c3122394685]{display:none}}@media (max-width: 480px){.testimonial-container[_ngcontent-ng-c3122394685]{grid-template-columns:repeat(2,1fr)}.testimonial-column[_ngcontent-ng-c3122394685]{width:100%;padding:10px;font-size:12px}.yelp-button[_ngcontent-ng-c3122394685]{width:70%;padding:10px}.hidden-on-mobile[_ngcontent-ng-c3122394685]{display:none}}</style><style ng-app-id="ng">.contact-container[_ngcontent-ng-c53287732]{max-width:1900px;width:100%;margin:20px auto 0;display:flex;justify-content:space-between;align-items:center;gap:20px;box-shadow:0 4px 8px #0000001a;background-color:#fff;padding:40px;height:550px}.contact-info[_ngcontent-ng-c53287732]{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding-right:20px;margin-left:60px}.contact-icons[_ngcontent-ng-c53287732]   a[_ngcontent-ng-c53287732]{color:#333;font-size:24px;margin:0 10px;transition:color .3s}.contact-icons[_ngcontent-ng-c53287732]   a[_ngcontent-ng-c53287732]:hover{color:#f60}.map-container[_ngcontent-ng-c53287732]{flex:1.5;border-radius:10px;overflow:hidden;margin-right:120px;height:400px;box-shadow:0 4px 8px #0000001a}@media (max-width: 1920px){.contact-container[_ngcontent-ng-c53287732]{align-items:center;justify-content:center;max-width:1900px}.contact-info[_ngcontent-ng-c53287732]{margin-right:30px}.map-container[_ngcontent-ng-c53287732]{margin-right:300px!important;width:100%;margin-top:20px}}@media (max-width: 768px){.contact-container[_ngcontent-ng-c53287732]{flex-direction:column;align-items:center;justify-content:center;max-width:700px}.map-container[_ngcontent-ng-c53287732]{width:100%;margin-top:20px}}.map-container[_ngcontent-ng-c53287732]{width:100%;height:400px;margin-top:20px;margin-left:0}@media (max-width:480px){.contact-container[_ngcontent-ng-c53287732]{flex-direction:column;align-items:center;justify-content:center;max-width:425px}.map-container[_ngcontent-ng-c53287732]{width:100%;margin-top:20px;align-items:center}}@media (max-width: 390px){.contact-container[_ngcontent-ng-c53287732]{flex-direction:column;align-items:center;justify-content:center;max-width:330px}.map-container[_ngcontent-ng-c53287732]{width:100%;margin-top:20px;align-items:center}}.map-container[_ngcontent-ng-c53287732]{width:100%;height:400px;margin-top:20px;margin-right:0;align-items:center}.contact-container[_ngcontent-ng-c53287732]{padding:20px;text-align:center}</style><style ng-app-id="ng">.footer-nav[_ngcontent-ng-c3411109142]{background-color:#000;padding:20px 0;text-align:center}.footer-navigation[_ngcontent-ng-c3411109142]   ul[_ngcontent-ng-c3411109142]{list-style:none;padding:0;margin:0;display:flex;justify-content:center;gap:40px;flex-wrap:wrap}.footer-navigation[_ngcontent-ng-c3411109142]   li[_ngcontent-ng-c3411109142]{margin:0}.footer-navigation[_ngcontent-ng-c3411109142]   a[_ngcontent-ng-c3411109142]{color:#fff;text-decoration:none;font-size:1rem;transition:color .3s}.footer-navigation[_ngcontent-ng-c3411109142]   a[_ngcontent-ng-c3411109142]:hover{color:orange}@media (max-width: 768px){.footer-navigation[_ngcontent-ng-c3411109142]   ul[_ngcontent-ng-c3411109142]{flex-direction:column;gap:20px}.footer-navigation[_ngcontent-ng-c3411109142]   a[_ngcontent-ng-c3411109142]{font-size:.9rem}}</style><style ng-app-id="ng">[_nghost-ng-c4061910111]{display:flex;justify-content:center;width:100%;padding:0}[_nghost-ng-c4061910111]   .slides[_ngcontent-ng-c4061910111]{width:80%;max-width:600px;height:280px;border-radius:10px;overflow:hidden;position:relative;box-shadow:0 0 10px #0000004d}[_nghost-ng-c4061910111]   .slides[_ngcontent-ng-c4061910111]   .slide[_ngcontent-ng-c4061910111]{width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}[_nghost-ng-c4061910111]   .slides[_ngcontent-ng-c4061910111]   :is(.nextButton[_ngcontent-ng-c4061910111], .previousButton[_ngcontent-ng-c4061910111]){position:absolute;top:50%;border:0px;background-color:transparent;font-size:30px;color:#fff;cursor:pointer;transform:translateY(-50%)}[_nghost-ng-c4061910111]   .slides[_ngcontent-ng-c4061910111]   .nextButton[_ngcontent-ng-c4061910111]{right:20px}[_nghost-ng-c4061910111]   .slides[_ngcontent-ng-c4061910111]   .previousButton[_ngcontent-ng-c4061910111]{left:20px}[_nghost-ng-c4061910111]   .slides[_ngcontent-ng-c4061910111]   #indicators[_ngcontent-ng-c4061910111]{position:absolute;left:0;right:0;margin:auto;bottom:20px;width:200px;display:flex;justify-content:center}[_nghost-ng-c4061910111]   .slides[_ngcontent-ng-c4061910111]   #indicators[_ngcontent-ng-c4061910111]   .indicator[_ngcontent-ng-c4061910111]{width:20px;height:20px;border-radius:50%;background-color:#fff;display:inline-block;margin:0 5px;cursor:pointer;transition:background-color .5s ease-in-out}[_nghost-ng-c4061910111]   .slides[_ngcontent-ng-c4061910111]   #indicators[_ngcontent-ng-c4061910111]   .indicator.active[_ngcontent-ng-c4061910111]{background-color:#4f4f4f}</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c3214059917 ng-version="18.2.8" ngh="0" ng-server-context="ssg"><app-header _ngcontent-ng-c3214059917 _nghost-ng-c1359355375 ngh="0"><nav _ngcontent-ng-c1359355375 class="navbar"><a _ngcontent-ng-c1359355375 href="#home" class="navbar-brand"><img _ngcontent-ng-c1359355375 src="assets/logo.jpeg" alt="Zest 4 Construction Logo" class="logo"></a><div _ngcontent-ng-c1359355375 class="burger-menu"> ☰ </div><div _ngcontent-ng-c1359355375 class="container"><ul _ngcontent-ng-c1359355375 class="nav"><li _ngcontent-ng-c1359355375><a _ngcontent-ng-c1359355375 href="#" class><i _ngcontent-ng-c1359355375 class="fas fa-home"></i> Home</a></li><li _ngcontent-ng-c1359355375><a _ngcontent-ng-c1359355375 href="#services" class><i _ngcontent-ng-c1359355375 class="fas fa-tools"></i> Services</a></li><li _ngcontent-ng-c1359355375><a _ngcontent-ng-c1359355375 href="#about-projects" class><i _ngcontent-ng-c1359355375 class="fas fa-hard-hat"></i> Projects</a></li><li _ngcontent-ng-c1359355375><a _ngcontent-ng-c1359355375 href="#testimonials" class><i _ngcontent-ng-c1359355375 class="fas fa-comments"></i> Testimonials</a></li><li _ngcontent-ng-c1359355375><a _ngcontent-ng-c1359355375 href="#contacts" class><i _ngcontent-ng-c1359355375 class="fas fa-phone"></i> Contact</a></li></ul></div></nav></app-header><section _ngcontent-ng-c3214059917 id="home" class="home"><h1 _ngcontent-ng-c3214059917>Quality Service, Quality Results</h1><button _ngcontent-ng-c3214059917 class="cta-button">Get Free Estimate</button></section><section _ngcontent-ng-c3214059917 id="services" class="services"><h2 _ngcontent-ng-c3214059917>General Contractor Services</h2><div _ngcontent-ng-c3214059917 class="service-list"><div _ngcontent-ng-c3214059917 class="service-item"><i _ngcontent-ng-c3214059917 class="fas fa-tools icon"></i><h3 _ngcontent-ng-c3214059917>General Contractor Services</h3><ul _ngcontent-ng-c3214059917><li _ngcontent-ng-c3214059917>Home Remodeling</li><li _ngcontent-ng-c3214059917>Kitchen Remodeling</li><li _ngcontent-ng-c3214059917>Bathroom Remodeling</li><li _ngcontent-ng-c3214059917>Home Additions</li><li _ngcontent-ng-c3214059917>ADUs</li></ul></div><div _ngcontent-ng-c3214059917 class="service-item"><i _ngcontent-ng-c3214059917 class="fas fa-water icon"></i><h3 _ngcontent-ng-c3214059917>Plumbing Services</h3><ul _ngcontent-ng-c3214059917><li _ngcontent-ng-c3214059917>Full house water repiping</li><li _ngcontent-ng-c3214059917>Water line repair</li><li _ngcontent-ng-c3214059917>Sewer line</li><li _ngcontent-ng-c3214059917>Kitchen sink installation</li><li _ngcontent-ng-c3214059917>Faucet installation</li><li _ngcontent-ng-c3214059917>Bathtub installation</li></ul></div><div _ngcontent-ng-c3214059917 class="service-item"><i _ngcontent-ng-c3214059917 class="fas fa-fan icon"></i><h3 _ngcontent-ng-c3214059917>Heating, Ventilation, and Air Conditioning</h3><ul _ngcontent-ng-c3214059917><li _ngcontent-ng-c3214059917>HVAC system maintenance</li><li _ngcontent-ng-c3214059917>HVAC installation or replacement</li><li _ngcontent-ng-c3214059917>HVAC system repair</li></ul></div><div _ngcontent-ng-c3214059917 class="service-item"><i _ngcontent-ng-c3214059917 class="fas fa-cube icon"></i><h3 _ngcontent-ng-c3214059917>Custom Kitchen Cabinets</h3><ul _ngcontent-ng-c3214059917><li _ngcontent-ng-c3214059917>Kitchen cabinet upgrades</li><li _ngcontent-ng-c3214059917>Custom cabinet design</li><li _ngcontent-ng-c3214059917>Refacing existing cabinets</li><li _ngcontent-ng-c3214059917>Installation of new cabinet doors</li><li _ngcontent-ng-c3214059917>Custom cabinet hardware</li></ul></div></div></section><app-about-projects _ngcontent-ng-c3214059917 _nghost-ng-c1844967749 ngh="2"><section _ngcontent-ng-c1844967749 id="about-projects" class="about-projects-container"><div _ngcontent-ng-c1844967749 class="content-wrapper"><div _ngcontent-ng-c1844967749 class="about-content"><h2 _ngcontent-ng-c1844967749>About Our Company</h2><p _ngcontent-ng-c1844967749>Dedicated to Excellence and Quality</p><div _ngcontent-ng-c1844967749 class="about-description"><p _ngcontent-ng-c1844967749>Welcome to our family-operated business! We specialize in turning your ideas into reality with our team of experienced professionals. With years of hands-on experience, we offer valuable suggestions and innovative solutions for your projects. Our commitment is to deliver high-quality and long-lasting results for every customer. Contact us today to schedule an appointment or to learn more about how we can help you achieve your goals.</p></div></div><div _ngcontent-ng-c1844967749 class="projects-slider"><h2 _ngcontent-ng-c1844967749>Our Projects</h2><app-image-slider _ngcontent-ng-c1844967749 _nghost-ng-c4061910111 ngh="1"><div _ngcontent-ng-c4061910111 class="slides"><div _ngcontent-ng-c4061910111 class="slide" style="background-image: url(assets/7.jpg); opacity: 1; transition: opacity 500ms ease-in-out;"></div><!----><div _ngcontent-ng-c4061910111 id="indicators"><div _ngcontent-ng-c4061910111 class="indicator active"></div><div _ngcontent-ng-c4061910111 class="indicator"></div><div _ngcontent-ng-c4061910111 class="indicator"></div><div _ngcontent-ng-c4061910111 class="indicator"></div><div _ngcontent-ng-c4061910111 class="indicator"></div><!----></div><!----><button _ngcontent-ng-c4061910111 class="nextButton"><fa-icon _ngcontent-ng-c4061910111 class="ng-fa-icon" ngh="0"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></fa-icon></button><button _ngcontent-ng-c4061910111 class="previousButton"><fa-icon _ngcontent-ng-c4061910111 class="ng-fa-icon" ngh="0"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="svg-inline--fa fa-arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></fa-icon></button></div></app-image-slider><button _ngcontent-ng-c1844967749 class="show-more-button">Show More</button><div _ngcontent-ng-c1844967749 class="modal"><div _ngcontent-ng-c1844967749 class="modal-content"><span _ngcontent-ng-c1844967749 class="close">×</span><h2 _ngcontent-ng-c1844967749>All Projects</h2><div _ngcontent-ng-c1844967749 class="gallery-images"><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/1.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/2.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/3.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/4.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/5.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/6.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/7.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/8.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/9.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/10.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/11.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/12.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/13.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/14.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/15.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/16.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/17.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/18.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/19.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/20.jpg"></div><div _ngcontent-ng-c1844967749 class="gallery-item"><img _ngcontent-ng-c1844967749 alt="Project Image" src="assets/21.jpg"></div><!----></div></div></div></div><div _ngcontent-ng-c1844967749 class="image-modal"><div _ngcontent-ng-c1844967749 class="image-modal-content"><span _ngcontent-ng-c1844967749 class="close">×</span><img _ngcontent-ng-c1844967749 alt="Selected Image" class="modal-image" src><button _ngcontent-ng-c1844967749 class="prev">❮</button><button _ngcontent-ng-c1844967749 class="next">❯</button></div></div></div></section></app-about-projects><app-testimonials _ngcontent-ng-c3214059917 _nghost-ng-c3122394685 ngh="0"><section _ngcontent-ng-c3122394685 id="testimonials" class="testimonials"><h2 _ngcontent-ng-c3122394685>What Our Clients Say</h2><div _ngcontent-ng-c3122394685 class="reviiew-container"><div _ngcontent-ng-c3122394685 class="testimonial-container"><div _ngcontent-ng-c3122394685 class="testimonial-column"><img _ngcontent-ng-c3122394685 src="assets/chengYu.png" alt><p _ngcontent-ng-c3122394685>"This team just completed an exterior door installation for my house. I'd like to give them a call as best handyman service..."</p></div><div _ngcontent-ng-c3122394685 class="testimonial-column"><img _ngcontent-ng-c3122394685 src="assets/annie.png" alt><p _ngcontent-ng-c3122394685>"Ali showed up exactly at our scheduled time to replace my garbage disposal and fix a hole in my wall..."</p></div><div _ngcontent-ng-c3122394685 class="testimonial-column"><img _ngcontent-ng-c3122394685 src="assets/roberto.png" alt><p _ngcontent-ng-c3122394685>"It's been around three years since I reviewed Zest4, so I think it is time for me to provide an update on how ..."</p></div><div _ngcontent-ng-c3122394685 class="testimonial-column"><img _ngcontent-ng-c3122394685 src="assets/josephine.png" alt><p _ngcontent-ng-c3122394685>I reached out to them on Yelp and got a response/quote from Naku within the hour. She told me that Ali was available the next day. I thought...</p></div><div _ngcontent-ng-c3122394685 class="testimonial-column"><img _ngcontent-ng-c3122394685 src="assets/thomas.png" alt><p _ngcontent-ng-c3122394685>Oh wow. I am def going to call Ali (and Nasar) up for next jobs. They're awesome...</p></div><div _ngcontent-ng-c3122394685 class="testimonial-column"><img _ngcontent-ng-c3122394685 src="assets/vonn.png" alt><p _ngcontent-ng-c3122394685>I have only looked for 3 things when finding a handyman, which is why I didn't have one until I reached out to Naku and his team...</p></div><div _ngcontent-ng-c3122394685 class="testimonial-column hidden-on-mobile"><img _ngcontent-ng-c3122394685 src="assets/rv.png" alt><p _ngcontent-ng-c3122394685>Hired Zest 4 to remove my fireplace, extend the wall/niche, install a few power and low voltage outlets and install laminate flooring in the exposed area....</p></div><div _ngcontent-ng-c3122394685 class="testimonial-column hidden-on-mobile"><img _ngcontent-ng-c3122394685 src="assets/Divya.png" alt><p _ngcontent-ng-c3122394685>The Zest 4 team is really good. Great communication, on time and very organized and detail oriented....</p></div><div _ngcontent-ng-c3122394685 class="testimonial-column hidden-on-mobile"><img _ngcontent-ng-c3122394685 src="assets/Ken.png" alt><p _ngcontent-ng-c3122394685>It's been over 2 years since Zest 4 construction helped me with bathroom refresh. I hade Ali come out to replace my vanity and could not be more pleased with the results...</p></div><div _ngcontent-ng-c3122394685 class="testimonial-column hidden-on-mobile"><img _ngcontent-ng-c3122394685 src="assets/Neha.png" alt><p _ngcontent-ng-c3122394685>Ali and his team did a wonderful job upgrading both our bathroom and kitchen. They were knowledgeable, polite,...</p></div></div><button _ngcontent-ng-c3122394685 class="yelp-button">GO TO YELP</button></div></section></app-testimonials><app-contacts _ngcontent-ng-c3214059917 _nghost-ng-c53287732 ngh="0"><section _ngcontent-ng-c53287732 id="contacts" class="contact-section"><div _ngcontent-ng-c53287732 class="contact-container"><div _ngcontent-ng-c53287732 class="contact-info"><h2 _ngcontent-ng-c53287732>Contact us!</h2><p _ngcontent-ng-c53287732>+1 (707) 800-8109</p><p _ngcontent-ng-c53287732>3947 Suncrest Ave, San Jose, CA 95132</p><div _ngcontent-ng-c53287732 class="contact-icons"><a _ngcontent-ng-c53287732 href="mailto:zest4construction@gmail.com"><i _ngcontent-ng-c53287732 class="fas fa-envelope"></i></a><a _ngcontent-ng-c53287732 href="tel:+17078008109"><i _ngcontent-ng-c53287732 class="fas fa-phone-alt"></i></a><a _ngcontent-ng-c53287732 href="#"><i _ngcontent-ng-c53287732 class="fas fa-globe"></i></a></div></div><div _ngcontent-ng-c53287732 id="map" class="map-container"></div></div></section></app-contacts><app-footer _ngcontent-ng-c3214059917 _nghost-ng-c3411109142 ngh="0"><footer _ngcontent-ng-c3411109142 class="footer-nav"><nav _ngcontent-ng-c3411109142 class="footer-navigation"><ul _ngcontent-ng-c3411109142><li _ngcontent-ng-c3411109142><a _ngcontent-ng-c3411109142 href="#services">Services</a></li><li _ngcontent-ng-c3411109142><a _ngcontent-ng-c3411109142 href="#about-projects">Projects</a></li><li _ngcontent-ng-c3411109142><a _ngcontent-ng-c3411109142 href="#about-projects">About</a></li><li _ngcontent-ng-c3411109142><a _ngcontent-ng-c3411109142 href="#testimonials">Testimonials</a></li><li _ngcontent-ng-c3411109142><a _ngcontent-ng-c3411109142 href="#contact">Contact</a></li></ul></nav></footer></app-footer></app-root>
+
+
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-MZNO2UJJ.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"1":"t0","2":"t1"},"c":{"1":[{"i":"t0","r":1}],"2":[{"i":"t1","r":1,"t":{"1":"t2"},"c":{"1":[{"i":"t2","r":1,"x":5}]}}]}},{"t":{"23":"t3"},"c":{"23":[{"i":"t3","r":1,"x":21}]}}]}</script></body></html>
