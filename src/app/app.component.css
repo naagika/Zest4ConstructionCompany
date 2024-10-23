@@ -1,0 +1,81 @@
+
+
+
+.yelp-reviews img {
+    height: 10px;
+  
+    margin-right: 5px;
+  }
+  
+  
+  
+  /* Основной стиль для больших экранов (до 1920x1080) */
+  /* Стили уже заданы выше */
+  
+  /* Планшеты (ширина до 1024px) */
+  @media (max-width: 1024px) {
+  
+  
+  }
+  
+  /* Мобильные устройства (ширина до 768px) */
+  @media (max-width: 768px) {
+   
+  
+    
+  
+    
+  
+  
+  
+  
+    .slideshow-container {
+      max-width: 90%;
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    .mySlides img {
+      width: 100%;
+      height: auto;
+    }
+  
+   
+  }
+  /* Маленькие мобильные устройства (ширина до 480px) */
+  @media (max-width: 480px), (max-width: 390px) {
+    .about-projects-container {
+      padding: 10px;
+      box-shadow: none; /* Убираем тень для упрощения */
+    }
+  
+    .about-content h2,
+    .projects-slider h2 {
+      font-size: 18px;
+    }
+  
+    .about-content p,
+    .projects-slider p,
+    .about-description p {
+      font-size: 14px;
+    }
+  
+    .show-more-button {
+      width: 70%;
+      padding: 10px;
+    }
+  
+    .gallery-images {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Максимальная высота для крупных экранов */
+  @media (min-height: 1080px) {
+    .about-projects-container {
+      height: auto;
+      max-height: 90vh;
+      overflow-y: auto; /* Добавляем прокрутку, если нужно */
+    }
+  }
+  

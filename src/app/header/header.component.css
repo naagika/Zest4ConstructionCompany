@@ -1,0 +1,103 @@
+
+
+.logo {
+  width: 120px; /* Настрой размер логотипа */
+  height: auto; /* Логотип автоматически адаптируется по высоте */
+  display: block;
+  margin-left: 30px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1920px; /* Максимальная ширина для центрации */
+  margin: 0 auto; /* Центрирование */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6600;
+  text-decoration: none;
+  margin-right: 35px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  margin-right: 400px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #1a1919;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  color: #ff6600;
+}
+.nav a.active {
+  color: #ff6600; /* Выделенный цвет для активного элемента */
+  font-weight: bold;
+}
+
+
+.burger-menu {
+  display: none; /* Скрыто по умолчанию */
+  font-size: 24px;
+  cursor: pointer;
+  align-self: center;
+  position: absolute; /* Для точного позиционирования */
+  right: 30px;
+}
+
+/* Стили для мобильной версии */
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Скрываем навигацию на мобильных устройствах */
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    margin-right: 20px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: px;
+  }
+
+  .nav.open {
+    display: flex; /* Показываем меню при нажатии на бургер */
+  }
+
+  .burger-menu {
+    display: block; /* Показываем бургер-меню на мобильных устройствах */
+    position: absolute;
+    right: 90px; /* Показываем бургер-меню на мобильных устройствах */
+  }
+
+  .nav-item {
+    padding: 10px 0;
+  }
+
+  .nav a {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
