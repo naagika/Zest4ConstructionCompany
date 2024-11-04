@@ -8,27 +8,12 @@
   }
   
   
-  
-  /* Основной стиль для больших экранов (до 1920x1080) */
-  /* Стили уже заданы выше */
-  
-  /* Планшеты (ширина до 1024px) */
   @media (max-width: 1024px) {
-  
   
   }
   
-  /* Мобильные устройства (ширина до 768px) */
   @media (max-width: 768px) {
-   
-  
-    
-  
-    
-  
-  
-  
-  
+ 
     .slideshow-container {
       max-width: 90%;
       height: auto;
@@ -42,11 +27,10 @@
   
    
   }
-  /* Маленькие мобильные устройства (ширина до 480px) */
   @media (max-width: 480px), (max-width: 390px) {
     .about-projects-container {
       padding: 10px;
-      box-shadow: none; /* Убираем тень для упрощения */
+      box-shadow: none; 
     }
   
     .about-content h2,

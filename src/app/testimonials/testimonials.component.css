@@ -11,6 +11,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Минимальная ширина колонки — 200px */
   gap: 20px;
   max-width: 1200px;
+
   margin: 0 auto;
 }
 
@@ -39,6 +40,9 @@
   border-radius: 5px;
   cursor: pointer;
   align-items: center;
+  margin-bottom: 40px;
+  
+  font-size: 16px;
 }
 
 /* Скрываем последние 4 отзыва на мобильных устройствах */
@@ -70,13 +74,9 @@
   .testimonial-column {
     width: 100%;
     padding: 10px;
-    font-size: 12px;
+    
   }
 
-  .yelp-button {
-    width: 70%;
-    padding: 10px;
-  }
 
   .hidden-on-mobile {
     display: none; /* Скрываем на очень маленьких экранах */

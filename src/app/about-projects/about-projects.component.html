@@ -1,5 +1,9 @@
 <!-- Проекты -->
 <section id="about-projects" class="about-projects-container">
+  
+
+
+
   <div class="content-wrapper">
     <!-- Блок About -->
     <div class="about-content">
@@ -14,11 +18,12 @@
     <div class="projects-slider">
       <h2>Our Projects</h2>
       <app-image-slider [slides]="slides" [animationSpeed]="500" [indicatorsVisible]="true"></app-image-slider>
-      <button (click)="openModal()" class="show-more-button">Show More</button>
+      <button (click)="openModal()" class="show-more-buttonn">Show More</button>
 
       <!-- Модальное окно для всех проектов -->
-      <div class="modal" [ngClass]="{ 'show': isModalOpen }">
-        <div class="modal-content">
+      <div class="modal" [ngClass]="{ 'show': isModalOpen }" (click)="closeModalOnBackgroundClick($event)">
+        <div class="modal-content"(click)="$event.stopPropagation()">
+          
           <span class="close" (click)="closeModal()">&times;</span>
           <h2>All Projects</h2>
           <div class="gallery-images">
@@ -31,8 +36,8 @@
     </div>
 
     <!-- Модальное окно для одного изображения -->
-    <div class="image-modal" [ngClass]="{ 'show': isImageModalOpen }">
-      <div class="image-modal-content">
+    <div class="image-modal" [ngClass]="{ 'show': isImageModalOpen }" (click)="closeImageModalOnBackgroundClick($event)">
+      <div class="image-modal-content"(click)="$event.stopPropagation()">
         <span class="close" (click)="closeImageModal()">&times;</span>
         <img [src]="selectedImage" alt="Selected Image" class="modal-image">
         <button class="prev" (click)="prevImage()">&#10094;</button>
@@ -40,4 +45,5 @@
       </div>
     </div>
   </div>
+
 </section>

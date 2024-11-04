@@ -17,36 +17,43 @@ export class AboutProjectsComponent {
   selectedImage: string = '';
 
   slides: any[] = [
-    { url: 'assets/7.jpg', title: '', description: '' },
-    { url: 'assets/2.jpg', title: '', description: '' },
-    { url: 'assets/3.jpg', title: '', description: '' },
-    { url: 'assets/4.jpg', title: '', description: '' },
-    { url: 'assets/5.jpg', title: '', description: '' }
+    { url: 'assets/1.png', title: '', description: '' },
+    { url: 'assets/2.png', title: '', description: '' },
+    { url: 'assets/3.png', title: '', description: '' },
+    { url: 'assets/o-9.jpg', title: '', description: '' },
+    { url: 'assets/o.jpg', title: '', description: '' },
+    { url: 'assets/o-8.jpg', title: '', description: '' }
   ];
 
   images = [
-    { url: 'assets/1.jpg' },
-    { url: 'assets/2.jpg' },
-    { url: 'assets/3.jpg' },
-    { url: 'assets/4.jpg' },
-    { url: 'assets/5.jpg' },
-    { url: 'assets/6.jpg' },
-    { url: 'assets/7.jpg' },
-    { url: 'assets/8.jpg' },
-    { url: 'assets/9.jpg' },
-    { url: 'assets/10.jpg' },
-    { url: 'assets/11.jpg' },
-    { url: 'assets/12.jpg' },
-    { url: 'assets/13.jpg' },
-    { url: 'assets/14.jpg' },
-    { url: 'assets/15.jpg' },
-    { url: 'assets/16.jpg' },
-    { url: 'assets/17.jpg' },
-    { url: 'assets/18.jpg' },
-    { url: 'assets/19.jpg' },
-    { url: 'assets/20.jpg' },
-    { url: 'assets/21.jpg' }
+    { url: 'assets/1.png' },
+    { url: 'assets/2.png' },
+    { url: 'assets/3.png' },
+    { url: 'assets/4.png' },
+    { url: 'assets/o-9.jpg' },
+    { url: 'assets/o.jpg' },
+    { url: 'assets/o-8.jpg' },
+    { url: 'assets/o-7.jpg' },
+    { url: 'assets/o-6.jpg' },
+    { url: 'assets/o-5.jpg' },
+    { url: 'assets/o-4.jpg' },
+    { url: 'assets/o-3.jpg' },
+  
   ];
+  closeModalOnBackgroundClick(event: Event) {
+    // Проверяем, что клик произошел именно на фоне, а не внутри .modal-content
+    if (event.target === event.currentTarget) {
+      this.closeModal();
+    }
+  }
+  
+  closeImageModalOnBackgroundClick(event: Event) {
+    // Проверяем, что клик произошел именно на фоне, а не внутри .image-modal-content
+    if (event.target === event.currentTarget) {
+      this.closeImageModal();
+    }
+  }
+  
 
   // Открытие модального окна для всех проектов
   openModal() {

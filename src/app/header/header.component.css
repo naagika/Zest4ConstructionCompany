@@ -4,14 +4,14 @@
   width: 120px; /* Настрой размер логотипа */
   height: auto; /* Логотип автоматически адаптируется по высоте */
   display: block;
-  margin-left: 30px;
+  
 }
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  max-width: 1920px; /* Максимальная ширина для центрации */
+  /* Максимальная ширина для центрации */
   margin: 0 auto; /* Центрирование */
   display: flex;
   justify-content: space-between;
@@ -66,6 +66,7 @@
   right: 30px;
 }
 
+
 /* Стили для мобильной версии */
 @media (max-width: 768px) {
   .nav {
@@ -81,7 +82,14 @@
     padding: 20px;
     z-index: px;
   }
+  .logo{
+    margin-right: 640px;
+  }
 
+  .navbar-brand{
+    margin-right: 5px;
+    margin-left: 30px;
+  }
   .nav.open {
     display: flex; /* Показываем меню при нажатии на бургер */
   }
@@ -99,5 +107,22 @@
   .nav a {
     font-size: 20px;
     font-weight: bold;
+  }
+}
+
+@media (max-width: 480px){
+
+  .navbar-brand{
+    margin-right: 5px;
+    margin-left: 30px;
+    display: visible;
+  }
+  .logo{
+    margin-right: 340px;
+  }
+}
+@media (max-width:390px) {
+  .logo{
+    margin-right: 300px;
   }
 }
