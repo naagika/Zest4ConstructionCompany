@@ -251,7 +251,7 @@
 
   }
   .modal-image {
-    width: 500px; /* Фиксированная ширина изображения */
+    width: 400px; /* Фиксированная ширина изображения */
     height: 300px; /* Фиксированная высота изображения */
     object-fit: cover; 
     border-radius: 8px;
@@ -282,8 +282,6 @@
   .show-more-buttonn{
     margin-bottom: 70px;
   }
-
- 
 }
 
   
