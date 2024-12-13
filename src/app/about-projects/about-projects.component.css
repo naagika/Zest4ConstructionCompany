@@ -61,20 +61,6 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-  
-  .show-more-buttonn{
-    margin-top: 60px;
-    padding: 15px 20px;
-    background-color: #ff6600;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    align-items: center;
-    font-size: 14px;
-    
-  }
-
 
 
   
@@ -248,15 +234,15 @@
   .gallery-images {
     grid-template-columns: repeat(3, 1fr); /* Устанавливаем три столбца */
     gap: 10px; /* Разрыв между изображениями */
-
+  
   }
   .modal-image {
     width: 400px; /* Фиксированная ширина изображения */
     height: 300px; /* Фиксированная высота изображения */
     object-fit: cover; 
     border-radius: 8px;
-    
   }
+ 
   .about-projects-container {
     padding: 10px;
     box-shadow: none; /* Убираем тень для упрощения */
@@ -279,9 +265,7 @@
   .about-description p {
     font-size: 14px;
   }
-  .show-more-buttonn{
-    margin-bottom: 70px;
-  }
+
 }
 
   

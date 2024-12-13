@@ -75,6 +75,7 @@
       @media (max-width: 480px) {
         .slides{
           margin-left: 60px;
+          max-width: 100%;
         }
       }
     }

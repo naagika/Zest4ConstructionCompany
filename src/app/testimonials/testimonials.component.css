@@ -29,21 +29,10 @@
   max-width: 60%;
   border-radius: 0%;
   margin-bottom: 3px;
+  margin-left: 40px;
 }
 
-.yelp-button {
-  margin-top: 40px;
-  padding: 15px 20px;
-  background-color: #ff6600;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  align-items: center;
-  margin-bottom: 40px;
-  
-  font-size: 16px;
-}
+
 
 /* Скрываем последние 4 отзыва на мобильных устройствах */
 .hidden-on-mobile {
@@ -81,4 +70,13 @@
   .hidden-on-mobile {
     display: none; /* Скрываем на очень маленьких экранах */
   }
+}
+@media (max-width: 380px) {
+.testimonial-column img{
+  margin-left: 30px;
+}
+.testimonial-column p{
+  font-size: 12px;
+}
+
 }

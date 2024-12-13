@@ -20,6 +20,7 @@
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+
 }
 
 
@@ -35,9 +36,8 @@
   list-style: none;
   display: flex;
   gap: 50px;
-  margin: 0;
-  padding: 0;
-  margin-right: 400px;
+ 
+  margin-left: 200px;
 }
 
 .nav a {
@@ -63,7 +63,7 @@
   cursor: pointer;
   align-self: center;
   position: absolute; /* Для точного позиционирования */
-  right: 30px;
+  right: 10px;
 }
 
 
@@ -75,7 +75,7 @@
     background-color: #ffffff;
     position: absolute;
     top: 60px;
-    margin-right: 20px;
+    margin-right: 0px;
     right: 0;
     width: 200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -97,11 +97,11 @@
   .burger-menu {
     display: block; /* Показываем бургер-меню на мобильных устройствах */
     position: absolute;
-    right: 90px; /* Показываем бургер-меню на мобильных устройствах */
+    right: 10px; /* Показываем бургер-меню на мобильных устройствах */
   }
 
   .nav-item {
-    padding: 10px 0;
+    padding: 0px ;
   }
 
   .nav a {
@@ -114,7 +114,7 @@
 
   .navbar-brand{
     margin-right: 5px;
-    margin-left: 30px;
+    margin-left: 0px;
     display: visible;
   }
   .logo{
